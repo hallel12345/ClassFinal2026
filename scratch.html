@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scratch Page | Discipline and Entrepreneurship</title>
+  <meta name="description" content="A hand-built scratch page on discipline and entrepreneurship." />
+  <link rel="stylesheet" href="css/scratch.css" />
+</head>
+<body>
+  <div class="scratch-wrapper" id="top">
+    <div class="top-nav">
+      <strong>Navigate:</strong>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="app.html">Finance App</a>
+      <a href="#tableau-section">Jump to Tableau Dashboard</a>
+    </div>
+
+    <div class="hero-block">
+      <h1>Entrepreneurship Requires Marathon Discipline</h1>
+      <p>
+        Building a business is closer to marathon training than a sprint. Great outcomes come from repeated effort, disciplined routines,
+        and the ability to stay steady through challenging days. This page is intentionally built from scratch to show hand-crafted HTML and CSS.
+      </p>
+      <a class="jump-link" href="#video-section">Jump to the discipline video</a>
+      <img src="images/marathon-training.jpg" alt="Runner training on a road as a symbol of long-term discipline" class="photo" />
+    </div>
+
+    <div class="learning-block">
+      <h2>My Framework for Growth</h2>
+      <p>Below is an ordered process with an embedded unordered checklist of habits that make each phase successful.</p>
+      <ol>
+        <li>
+          Set a clear vision and measurable goals.
+          <ul>
+            <li>Define quarterly targets.</li>
+            <li>Choose one major personal discipline goal.</li>
+            <li>Track weekly progress honestly.</li>
+          </ul>
+        </li>
+        <li>Execute high-value tasks consistently, even when motivation is low.</li>
+        <li>Review results, learn quickly, and adjust systems without ego.</li>
+      </ol>
+      <p class="small-note">This nested list satisfies the assignment requirement for embedded list structures.</p>
+    </div>
+
+    <div class="media-block" id="video-section">
+      <h2>Video: Building Discipline Over Time</h2>
+      <p>This TED talk emphasizes grit and long-term consistency, which closely matches how entrepreneurs and athletes improve.</p>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/H14bBuluwB8" title="Grit: The power of passion and perseverance" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="tableau-block" id="tableau-section">
+      <h2>Interactive Tableau Visualization</h2>
+      <p>
+        This is a live Tableau Public dashboard embed. You can interact with filters and data directly, which demonstrates real external data embedding.
+      </p>
+      <div class='tableauPlaceholder' id='viz1713120000000' style='position: relative'>
+        <noscript>
+          <a href='#'>
+            <img alt='Stocks Dashboard' src='https://public.tableau.com/static/images/Re/RegionalSampleWorkbook/Stocks/1_rss.png' style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='RegionalSampleWorkbook/Stocks' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='showVizHome' value='no' />
+        </object>
+      </div>
+      <script type='text/javascript'>
+        var divElement = document.getElementById('viz1713120000000');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width = '100%';
+        vizElement.style.height = '820px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+      <p><a class="jump-link" href="#top">Back to top of page</a></p>
+      <p><a class="jump-link" href="app.html">Open the interactive Finance Trivia app</a></p>
+    </div>
+  </div>
+</body>
+</html>

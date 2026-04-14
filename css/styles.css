@@ -123,6 +123,35 @@ body {
   border-radius: 999px;
   padding: 0.35rem 0.78rem;
   font-size: 0.92rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  cursor: default;
+}
+
+.chip::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+  transition: left 0.35s ease;
+}
+
+.chip:hover,
+.chip:focus-visible {
+  background: #1f7a8c;
+  color: #ffffff;
+  border-color: #1f7a8c;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(31, 122, 140, 0.28);
+}
+
+.chip:hover::before,
+.chip:focus-visible::before {
+  left: 130%;
 }
 
 .contact-card {
